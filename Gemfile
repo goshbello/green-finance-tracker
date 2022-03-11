@@ -32,6 +32,7 @@ gem 'devise'
 # we used the two codes below to add bootsrap 5 style to devise. this is for bootstrap 5
 gem "devise-i18n"
 gem "devise-bootstrap5"
+gem 'iex-ruby-client' # api gem from https://github.com/dblock/iex-ruby-client
 
 # end of gems added
 
