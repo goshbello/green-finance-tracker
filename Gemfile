@@ -26,7 +26,14 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+
+# gems added for devise
 gem 'devise'
+# we used the two codes below to add bootsrap 5 style to devise. this is for bootstrap 5
+gem "devise-i18n"
+gem "devise-bootstrap5"
+
+# end of gems added
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
