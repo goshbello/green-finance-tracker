@@ -1,12 +1,14 @@
-<% if notice %>
-  <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-<% end %>
-<% if alert %>
-  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
+<% flash.each do |name, msg| %>
+  <% if flash[:notice] %>
+    <div class="flash-msg notice">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <%= msg %>
+    </div>
+
+  <% else %>
+    <div class="flash-msg alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <%= msg %>
+    </div>
+  <% end %>
 <% end %>

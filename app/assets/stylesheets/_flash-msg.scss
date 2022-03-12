@@ -1,0 +1,26 @@
+.notice, .alert {
+  padding: 10px;
+  background-color: #198754;
+  color: white;
+  width: 90%;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.6rem;
+}
+
+.notice {background-color: #198754;}
+.alert {background-color: #dc3545;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

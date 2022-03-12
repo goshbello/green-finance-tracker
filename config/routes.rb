@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
   root 'welcome#index'
 
+  # routes to display stock information in browser
+  get 'portfolio', to: 'users#portfolio'
 
+  #search for stock route
+  get 'search_stock', to: 'stocks#search'
 
 
 

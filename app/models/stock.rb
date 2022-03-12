@@ -7,7 +7,13 @@ class Stock < ApplicationRecord
                                   secret_token: Rails.application.credentials.iex_client[:secret_token_key],
                                   endpoint: 'https://sandbox.iexapis.com/v1')
 
-    #return price
-    client.price(ticker_symbol) 
+    # return price
+    # client.price(ticker_symbol) 
+    # create new object since we are with the class, we can use "new()" or "Stock.new()"
+    begin
+      new(ticker: ticker_symbol, name: client.company(ticker_symbol).company_name, last_price: client.price(ticker_symbol) )
+    rescue => execption
+      return nil
+    end
   end
 end
