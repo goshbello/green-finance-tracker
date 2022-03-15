@@ -34,6 +34,7 @@ gem "devise-i18n"
 gem "devise-bootstrap5"
 gem 'iex-ruby-client' # api gem from https://github.com/dblock/iex-ruby-client
 gem 'font-awesome-rails'  # to allows to use font-awesome
+gem 'hirb'
 
 # end of gems added
 
